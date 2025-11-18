@@ -26,7 +26,7 @@
     </div>
 
     <script>
-      // Load messages from localStorage if available, else use default messages
+      
       let messages = JSON.parse(localStorage.getItem("messages")) || [
         "I love you so much, hubby",
         "Ba't ang cute mo pag tulog?",
@@ -50,19 +50,19 @@
         "I always fuck up don't I? and as of now you're still here. :)",
       ];
 
-      // Save messages to localStorage
+     
       function saveMessages() {
         localStorage.setItem("messages", JSON.stringify(messages));
       }
 
-      // Show a random message
+      
       function generateMessage() {
         const box = document.getElementById("messageBox");
         const randomIndex = Math.floor(Math.random() * messages.length);
         box.textContent = messages[randomIndex];
       }
 
-      // Add new message and save permanently
+      
       function addMessage() {
         const newMsg = document.getElementById("newMessage").value.trim();
         if (!newMsg) return;
@@ -75,3 +75,4 @@
     </script>
   </body>
 </html>
+
