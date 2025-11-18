@@ -67,12 +67,13 @@
         const newMsg = document.getElementById("newMessage").value.trim();
         if (!newMsg) return;
 
-        messages.push(newMsg); // Add to array
-        saveMessages(); // Save to localStorage
+        messages.push(newMsg); 
+        saveMessages(); 
         document.getElementById("newMessage").value = "";
         alert("Message added! 💖 Click the jar to see it.");
       }
     </script>
   </body>
 </html>
+
 
