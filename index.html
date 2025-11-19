@@ -51,10 +51,10 @@
         "I miss you so much, hubby",
       ];
 
-      // load saved messages
+     
       let saved = JSON.parse(localStorage.getItem("messages")) || [];
 
-      // merge without duplicates
+      
       let messages = [...new Set([...defaultMessages, ...saved])];
 
       function saveMessages() {
@@ -80,4 +80,5 @@
     </script>
   </body>
 </html>
+
 
