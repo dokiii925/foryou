@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #FFC0CB;
+  background-color: #FFD1DF;
+  font-family: 'Courier New', Courier, monospace ;
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background: white;
+}
+
+.container {
+  text-align: center;       
+  width: 100%;
+  max-width: 400px;         
+  padding: 20px;
+}
+
+.jar {
+  border: 2px solid#c25179;;
+  width: 150px;
+  height: auto;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer
+  transition: transform 1s ease;
+}
+
+
+
+.jar:hover {
+transform: scale(1.05);
+transition: transform 1s ease;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #ff7aa8;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #ff5c95;
+  
+}
+
+.message-box {
+margin-top: 20px;
+padding: 15px;
+background:  #c25179;;
+border-radius: 10px;
+min-height: 80px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+font-size: 18px;
+color: #ffffff;
+ 
+}
+
+
+.add-message {
+margin-top: 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+border-radius: 10px;
+}
+
+
+.add-message label {
+font-size: 20px;
+font-weight: bold;
+border: 2px solid blue;
+}
+
+#messageBox {border-radius: 10px;}
+
+textarea
+{border-radius: 10px;
+border-color: #c25179;
+width: 100%; 
+height: 100%;
+}
+
